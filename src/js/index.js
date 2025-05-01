@@ -15,6 +15,9 @@ import map01 from "./components/map-01";
 import "./components/calendar-init.js";
 import "./components/image-resize";
 
+import productsComparison from "./data/products_comparison.json";
+import { crc32 } from 'js-crc';
+
 Alpine.plugin(persist);
 window.Alpine = Alpine;
 Alpine.start();
@@ -116,3 +119,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+window.getComparison = function getComparison(url) {
+  const hashNumber = Number('0x' + crc32(url));
+    return productsComparison.comparisons[hashNumber % productsComparison.comparisons.length];
+}

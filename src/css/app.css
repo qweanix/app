@@ -1,0 +1,3 @@
+.compare-product-item + .compare-product-item tr:first-child td{
+    margin-top: 30px;
+}

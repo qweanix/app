@@ -1,0 +1,195 @@
+<div class="overflow-hidden rounded-2xl border border-gray-200 bg-white px-4 pt-4 pb-3 sm:px-6 dark:border-gray-800 dark:bg-white/[0.03]">
+  <div class="flex flex-col gap-2 mb-4 sm:flex-row sm:items-center sm:justify-between">
+    <div>
+      <h3 class="text-lg font-semibold text-gray-800 dark:text-white/90">
+        Product comparison
+      </h3>
+    </div>
+
+  </div>
+
+  <div class="max-w-full overflow-x-auto custom-scrollbar">
+        <table class="min-w-full divide-y divide-gray-100 dark:divide-gray-800">
+        <!-- table header start -->
+        <thead>
+        <tr class="border-gray-100 border-y dark:border-gray-800">
+          <th class="py-4">
+            <div class="flex items-center">
+              <p
+                class="font-medium text-gray-500 text-theme-xs dark:text-gray-400"
+              >
+                Competitors products
+              </p>
+            </div>
+          </th>
+          <th class="py-4">
+            <div class="flex items-center min-w-20">
+              <p
+                class="font-medium text-gray-500 text-theme-xs dark:text-gray-400"
+              >
+                Price
+              </p>
+            </div>
+          </th>
+          <th class="py-4">
+            <div class="flex items-center min-w-20">
+              <p
+                class="font-medium text-gray-500 text-theme-xs dark:text-gray-400"
+              >
+                Reviews
+              </p>
+            </div>
+          </th>
+          <th class="py-4">
+            <div class="flex items-center col-span-2 min-w-20">
+              <p
+                class="font-medium text-gray-500 text-theme-xs dark:text-gray-400"
+              >
+                Rating
+              </p>
+            </div>
+          </th>
+        </tr>
+        </thead>
+        <!-- table header end -->
+
+        <template x-for="product in comparison?.products" :key="index">
+          <tbody>
+            <template x-if="product.recommendation">
+              <tr>
+                <td>
+                  <p class="font-medium text-red-400 mt-2">
+                    Your product summary:
+                  </p>
+                </td>
+              </tr>
+            </template>
+            <tr>
+              <td class="py-4">
+                <div class="flex items-center">
+                  <div class="flex items-center gap-3">
+                    <div class="h-[50px] w-[50px] overflow-hidden rounded-md">
+                      <img src="./images/unknown.jpg" alt="Product" />
+                    </div>
+                    <div>
+                      <p
+                        class="font-medium text-gray-650 text-theme-sm dark:text-white/90"
+                        x-text="product.title"
+                      ></p>
+                      <span class="text-gray-500 text-theme-xs dark:text-gray-400"
+                            x-text="product.description"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="py-4">
+                <div class="flex items-center">
+                  <p class="text-gray-500 text-theme-sm dark:text-gray-400"
+                     x-text="product.price"></p>
+                </div>
+              </td>
+              <td class="py-4">
+                <div class="flex items-center">
+                  <p class="text-gray-500 text-theme-sm dark:text-gray-400"
+                    x-text="product.reviews">
+                  </p>
+                </div>
+              </td>
+              <td class="py-3">
+                <div class="flex items-center">
+                  <p
+                    class="rounded-full bg-success-50 px-2 py-0.5 text-theme-xs font-medium text-success-600 dark:bg-success-500/15 dark:text-success-500"
+                    x-text="product.rating"></p>
+                </div>
+              </td>
+            </tr>
+            <tr class="note-row">
+              <td class="py-1">
+                <p class="font-medium text-teal-900 text-theme-sm dark:text-white/90 mb-5">
+                  Qweanix Notes:
+                  <span x-text="product.notes"></span>
+                </p>
+              </td>
+            </tr>
+            <template x-if="product.recommendation">
+              <tr>
+                <td class="py-3">
+                  <p class="font-extrabold text-lg text-sky-950 dark:text-white/90">
+                    Recommended improvement:
+                  </p>
+                  <ul class="text-gray-600 dark:text-gray-400 mt-2 flex flex-col gap-2 text-theme-sm py-1">
+                    <li>
+                      <span class="font-medium text-gray-600 dark:text-gray-400">Title:</span>
+                      <span x-text="product.recommendation.title"></span>
+                    </li>
+
+                    <li>
+                      <span class="font-medium text-gray-600 dark:text-gray-400">Description:</span>
+                      <span x-text="product.recommendation.description"></span>
+                    </li>
+
+                    <li>
+                      <span class="font-medium text-gray-600 dark:text-gray-400">Image improvements:</span>
+                      <span x-text="product.recommendation.image_improvements"></span>
+                    </li>
+
+                    <li>
+                      <span class="font-medium text-gray-600 dark:text-gray-400">Price positioning:</span>
+                      <span>
+                        <span x-text="product.recommendation.price_positioning.recommendation"></span><br />
+
+                        <template x-if="product.recommendation.price_positioning.competitor_range">
+                          Competitor range:
+                          <span x-text="product.recommendation.price_positioning.competitor_range[0]"></span>$-
+                          <span x-text="product.recommendation.price_positioning.competitor_range[1]"></span>$
+                        </template>
+                      </span>
+                    </li>
+
+                    <li class="py-1">
+                      <span class="font-medium text-gray-600 dark:text-gray-400">Differentiators:</span>
+                      <ol class="list-decimal ml-5">
+                        <template x-for="(competitor, index) in product.recommendation.differentiators" :key="index">
+                          <li x-text="competitor"></li>
+                        </template>
+                      </ol>
+                    </li>
+                  </ul>
+
+                  <p class="font-extrabold text-lg text-sky-950 dark:text-white/90 mt-5">
+                    Niche stand out idea:
+                  </p>
+                  <template x-if="typeof product.recommendation.niche_stand_out_idea == 'string'">
+                    <span class="text-gray-600 dark:text-gray-400" x-text="product.recommendation.niche_stand_out_idea"></span>
+                  </template>
+
+                  <template x-if="typeof product.recommendation.niche_stand_out_idea == 'object'">
+                  <ul class="text-lg text-gray-600 dark:text-gray-400 mt-2 flex flex-col gap-2 text-theme-sm">
+                    <li>
+                      <span class="font-medium text-gray-600 dark:text-gray-400">Positioning:</span>
+                      <span x-text="product.recommendation.niche_stand_out_idea.positioning"></span>
+                    </li>
+
+                    <li>
+                      <span class="font-medium text-gray-600 dark:text-gray-400">Target audience:</span>
+                      <span x-text="product.recommendation.niche_stand_out_idea.target_audience"></span>
+                    </li>
+
+                    <li>
+                      <span class="font-medium text-gray-600 dark:text-gray-400">Value addition:</span>
+                      <span x-text="product.recommendation.niche_stand_out_idea.target_audience"></span>
+                    </li>
+                  </ul>
+                  </template>
+
+                </td>
+              </tr>
+            </template>
+          </tbody>
+        </template>
+        <!-- table body end -->
+        </tbody>
+      </table>
+    </div>
+</div>
