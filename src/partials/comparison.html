@@ -138,11 +138,12 @@
                       <span class="font-medium text-gray-600 dark:text-gray-400">Price positioning:</span>
                       <span>
                         <span x-text="product.recommendation.price_positioning.recommendation"></span><br />
-
-                        <template x-if="product.recommendation.price_positioning.competitor_range">
-                          Competitor range:
-                          <span x-text="product.recommendation.price_positioning.competitor_range[0]"></span>$-
-                          <span x-text="product.recommendation.price_positioning.competitor_range[1]"></span>$
+                        <template x-if="product.recommendation.price_positioning.competitor_range?.length">
+                          <span>
+                            Competitor range:
+                            <span x-text="product.recommendation.price_positioning.competitor_range[0]"></span>$-
+                            <span x-text="product.recommendation.price_positioning.competitor_range[1]"></span>$
+                          </span>
                         </template>
                       </span>
                     </li>
