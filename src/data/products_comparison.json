@@ -1,0 +1,187 @@
+{
+  "comparisons": [
+    {
+      "product_comparison_id": "comparison_1",
+      "products": [
+        {
+          "product_id": "product_1",
+          "title": "Blueberry Pet Classic Nylon Dog Collar \u2013 Adjustable, Reflective",
+          "description": "Durable nylon collar with adjustable sizing. Reflective stitching for night walks. Available in multiple colors. Easy-snap buckle and D-ring for leash attachment.",
+          "price": 11.99,
+          "reviews": 12300,
+          "rating": 4.8,
+          "notes": "Clear functional features, popular brand, visual safety element (reflective), clean product photo"
+        },
+        {
+          "product_id": "product_2",
+          "title": "GoTags Personalized Dog Collar \u2013 Custom Name & Number",
+          "description": "Embroidered dog collar with your pet\u2019s name and phone number. Adjustable fit, soft yet strong nylon. Ideal for pet safety and ID without tags.",
+          "price": 18.49,
+          "reviews": 7900,
+          "rating": 4.6,
+          "notes": "Unique personalization, good product shots showing embroidery, safety-focused value prop"
+        },
+        {
+          "product_id": "product_3",
+          "title": "dog belt for pet animal",
+          "description": "Dog collar for use with pet. Available color. Collar for dogs. Strong and good.",
+          "price": 9.0,
+          "reviews": 28,
+          "rating": 3.0,
+          "notes": "Generic and broken English in title/desc, no unique value, low image quality, unclear sizing",
+          "recommendation": {
+            "title": "Adjustable Nylon Dog Collar \u2013 Durable, Comfortable Fit, Multiple Colors, Ideal for Daily Walks",
+            "description": "Give your pet the comfort and safety they deserve with this durable and adjustable nylon dog collar. Designed for everyday use, it features a strong snap buckle and a metal D-ring for leash attachment. Available in multiple colors and sizes to suit dogs of all breeds. Lightweight, comfortable, and built to last.",
+            "image_improvements": [
+              "High-resolution main image with white background",
+              "Lifestyle image showing the collar on a dog outdoors",
+              "Feature callouts highlighting adjustable sizing, strong buckle, and color options",
+              "Optional image with size chart or breed fit example"
+            ],
+            "price_positioning": {
+              "current_price": 9,
+              "competitor_range": [
+                11.99,
+                18.49
+              ],
+              "recommendation": "Maintain $9 for budget appeal; increase to $10.99\u2013$11.49 after listing quality and reviews improve"
+            },
+            "differentiators": [
+              "Adjustable sizing (S, M, L)",
+              "Durable nylon material",
+              "Multiple color options",
+              "Metal D-ring and quick-release buckle",
+              "Optional: soft inner lining or fade-resistant stitching"
+            ],
+            "niche_stand_out_idea": {
+              "positioning": "Everyday Collar for Growing Puppies \u2013 Safe, Adjustable, and Built for Comfort",
+              "target_audience": "New pet owners, puppy parents",
+              "value_addition": "Optional matching leash or ID tag loop"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "product_comparison_id": "comparison_2",
+      "products": [
+        {
+          "product_id": "product_4",
+          "title": "Secura Automatic Soap Dispenser \u2013 Touchless, Stainless Steel",
+          "description": "Touch-free soap dispensing with adjustable volume. Stylish stainless steel body. Waterproof base for long-term use. Ideal for bathrooms and kitchens.",
+          "price": 24.99,
+          "reviews": 8900,
+          "rating": 4.6,
+          "notes": "Clear benefits, premium material, touchless feature highlighted, sleek design photo"
+        },
+        {
+          "product_id": "product_5",
+          "title": "Simplehuman Wall Mount Soap Dispenser \u2013 Brushed Nickel, No Drip",
+          "description": "Wall-mounted pump with precise no-drip valve. Refillable and easy to install. Rust-resistant brushed nickel finish. Great for saving counter space.",
+          "price": 32.0,
+          "reviews": 5600,
+          "rating": 4.7,
+          "notes": "Unique wall-mount differentiator, design-focused, strong niche appeal"
+        },
+        {
+          "product_id": "product_6",
+          "title": "soap thing for home use",
+          "description": "This is soap dispenser. Works with soap. Good for kitchen and other.",
+          "price": 14.0,
+          "reviews": 31,
+          "rating": 3.1,
+          "notes": "Vague title, generic description, low credibility, no photos of real use",
+          "recommendation": {
+            "title": "Automatic Soap Dispenser for Kitchen & Bathroom \u2013 Touchless Operation, Sleek Design, Refillable",
+            "description": "Upgrade your hygiene routine with this hands-free automatic soap dispenser. Designed for use in kitchens or bathrooms, it features a sleek modern look, adjustable volume control, and a large refillable reservoir. Compatible with liquid soap and hand sanitizer for versatile use.",
+            "ImageImprovements": [
+              "High-resolution main image with white background showing the dispenser clearly",
+              "Lifestyle images showing use in kitchen and bathroom settings",
+              "Feature callouts (e.g., 'Touchless', 'Refillable', 'Sleek Modern Design')",
+              "Optional product video showing automatic dispensing in action"
+            ],
+            "price_positioning": {
+              "current_price": 14,
+              "competitor_range": [
+                14,
+                16
+              ],
+              "recommendation": "Position as an affordable alternative to premium models to attract budget-conscious buyers"
+            },
+            "differentiators": [
+              "Touchless operation",
+              "Water-resistant body",
+              "Compatible with both liquid soap and sanitizer",
+              "Long battery life or USB charging",
+              "Compact design for smaller spaces"
+            ],
+            "niche_stand_out_idea": {
+              "positioning": "Affordable Touchless Soap Dispenser for Families",
+              "message": "Keep Kids\u2019 Hands Clean Without the Mess",
+              "target_audience": "Families with children, budget-conscious buyers",
+              "value_addition": [
+                "Bundle with refill pouches",
+                "Offer multi-pack discounts"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "product_comparison_id": "comparison_3",
+      "products": [
+        {
+          "product_id": "product_7",
+          "title": "ORBLUE Stainless Steel Garlic Press, Heavy Duty",
+          "description": "Effortlessly crush garlic with this durable, rust-proof stainless steel press. Ergonomic handle for comfort. Dishwasher safe.",
+          "price": 13.99,
+          "reviews": 14582,
+          "rating": 4.7,
+          "notes": "Excellent image, clear value"
+        },
+        {
+          "product_id": "product_8",
+          "title": "Alpha Grillers Garlic Press \u2013 Soft Grip, Easy Clean",
+          "description": "Professional-grade garlic press with easy-clean design. Includes cleaning brush. Comfortable soft-grip handle for arthritis-friendly use.",
+          "price": 15.49,
+          "reviews": 9003,
+          "rating": 4.6,
+          "notes": "Strong differentiators"
+        },
+        {
+          "product_id": "product_9",
+          "title": "Garlic kitchen tool metal",
+          "description": "Garlic press from metal. Good quality. Must have for kitchen. Easy use.",
+          "price": 11.99,
+          "reviews": 43,
+          "rating": 3.2,
+          "notes": "Blurry image, no differentiation",
+          "recommendation": {
+            "title": "Heavy-Duty Stainless Steel Garlic Press \u2013 Easy Clean, Ergonomic Handle, Rust-Proof Kitchen Tool",
+            "description": "Effortlessly crush garlic with this heavy-duty, rust-resistant garlic press. Designed for comfort with an ergonomic handle and easy-to-clean design. Perfect for home chefs who value durability and simplicity in the kitchen.",
+            "image_improvements": [
+              "Use high-resolution images",
+              "Main image on white background",
+              "Close-up showing garlic being crushed",
+              "Callouts highlighting ergonomic grip and stainless steel",
+              "Lifestyle image showing product in kitchen use"
+            ],
+            "price_positioning": {
+              "current_price": 11.99,
+              "recommendation": "Keep at $11.99 to build reviews, then increase to $12.99\u201313.49 once credibility is improved"
+            },
+            "differentiators": [
+              "Rust-proof stainless steel",
+              "Dishwasher safe",
+              "Ergonomic handle",
+              "Includes cleaning brush or garlic peeler",
+              "Lifetime warranty"
+            ],
+            "niche_stand_out_idea": "Perfect Garlic Press for Arthritis Sufferers \u2013 Comfortable Grip & No-Fuss Cleaning"
+          }
+        }
+      ]
+    }
+  ]
+}
