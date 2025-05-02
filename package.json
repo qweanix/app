@@ -1,5 +1,5 @@
 {
-  "name": "tailadmin-free",
+  "name": "qweanix-app",
   "version": "2.0.1",
   "description": "TailAdmin is a high-quality, open-source, and free Tailwind CSS admin template that is perfect for creating data-rich backends, powerful web applications and dashboard-admin projects.",
   "main": "index.js",
@@ -9,11 +9,6 @@
     "sort": "npx prettier --write src"
   },
   "keywords": [],
-  "author": {
-    "name": "TailAdmin",
-    "email": "hello@tailadmin.com",
-    "url": "https://tailadmin.com"
-  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.24.9",
